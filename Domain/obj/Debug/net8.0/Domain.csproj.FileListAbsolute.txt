@@ -1,0 +1,11 @@
+E:\Net\PollingApp\Domain\bin\Debug\net8.0\Domain.deps.json
+E:\Net\PollingApp\Domain\bin\Debug\net8.0\Domain.dll
+E:\Net\PollingApp\Domain\bin\Debug\net8.0\Domain.pdb
+E:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+E:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+E:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+E:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.dll
+E:\Net\PollingApp\Domain\obj\Debug\net8.0\refint\Domain.dll
+E:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.pdb
+E:\Net\PollingApp\Domain\obj\Debug\net8.0\ref\Domain.dll

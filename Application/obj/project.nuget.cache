@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "kv4PwMGIM/pfi2jPdkIPaH0YcQdaGdDPFBZzAEgMiiha4R7WmgGzOYaAxMdy3OPuQDBPBaXp9ztOjZ2AT+fgRw==",
+  "success": true,
+  "projectFilePath": "E:\\Net\\PollingApp\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SERGIO\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\SERGIO\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",
+    "C:\\Users\\SERGIO\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\SERGIO\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\SERGIO\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
