@@ -1,5 +1,5 @@
 
-using Infrastructure.SignalR;
+//using Infrastructure.SignalR;
 using WebApi.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,7 +25,7 @@ var app = builder.Build();
 
 app.UseCors("AllowAll");
 
-app.MapHub<VotingHub>("/votingHub").RequireCors("AllowAll");
+//app.MapHub<VotingHub>("/votingHub").RequireCors("AllowAll");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

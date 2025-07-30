@@ -17,7 +17,6 @@ namespace Application.DTOs.Poll
     public class PollOptionDTO
     {
         public int Id { get; set; }
-        public string OptionText { get; set; }
-        public int Votes { get; set; }
+        public string Option { get; set; }
     }
 }

@@ -9,3 +9,15 @@ E:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.dll
 E:\Net\PollingApp\Domain\obj\Debug\net8.0\refint\Domain.dll
 E:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.pdb
 E:\Net\PollingApp\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\Net\PollingApp\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\Net\PollingApp\Domain\bin\Debug\net8.0\Domain.dll
+D:\Net\PollingApp\Domain\bin\Debug\net8.0\Domain.pdb
+D:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.dll
+D:\Net\PollingApp\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\Net\PollingApp\Domain\obj\Debug\net8.0\Domain.pdb
+D:\Net\PollingApp\Domain\obj\Debug\net8.0\ref\Domain.dll

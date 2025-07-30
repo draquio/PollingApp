@@ -31,7 +31,7 @@ namespace Application.Commands.Polls.Create
             try
             {
                 var pollAggregate = _factory.CreatePoll(request.Poll.Title, request.Poll.ExpirationDate);
-                foreach (var option in request.Poll.Options)
+                foreach (string option in request.Poll.Options)
                 {
                     pollAggregate.AddOption(option);
                 }

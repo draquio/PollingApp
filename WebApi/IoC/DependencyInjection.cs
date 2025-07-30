@@ -6,7 +6,6 @@ using Domain.Interfaces.Repositories;
 using Domain.Interfaces.Services;
 using Infrastructure.Persistence;
 using Infrastructure.Repositories;
-using Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace WebApi.IoC
@@ -28,7 +27,8 @@ namespace WebApi.IoC
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IPollRepository, PollRepository>();
-            services.AddTransient<IVoteTrackingRepository, VoteTrackingRepository>();
+            services.AddScoped<IVoteRepository, VoteRepository>();
+
 
             // Services
             services.AddScoped<IValidationService, ValidationService>();
@@ -40,9 +40,6 @@ namespace WebApi.IoC
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(
                 typeof(GetAllUsersQueryHandler).Assembly
             ));
-
-            // Notificacion
-            services.AddTransient<INotificationService, SignalRNotificationService>();
 
             // Cors
             /*

@@ -29,11 +29,15 @@ namespace Application.Mappers
                                                                                             : null))
                 .ForMember(dto => dto.CreatedAt, options => options.MapFrom(poll => poll.CreatedAt.ToString("dd/MM/yyyy")));
 
+            CreateMap<PollOption, PollOptionDTO>()
+                .ForMember(dto => dto.Option, options => options.MapFrom(pollOption => pollOption.OptionText))
+                .ReverseMap();
+
+
 
             CreateMap<PollReadDTO, Poll>();
             CreateMap<PollCreateDTO, Poll>().ReverseMap();
 
-            CreateMap<PollOption, PollOptionDTO>().ReverseMap();
             #endregion
         }
     }

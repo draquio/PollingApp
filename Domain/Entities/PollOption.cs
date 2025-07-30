@@ -10,10 +10,7 @@ namespace Domain.Entities
     {
         public int Id { get; set; }
         public string OptionText { get; set; }
-        public int Votes { get; private set; }
-        public void AddVote()
-        {
-            Votes++;
-        }
+        public int PollId { get; set; }
+        public Poll Poll { get; set; }
     }
 }

@@ -55,12 +55,10 @@ namespace Infrastructure.Persistence.Migrations
 
                     b.Property<string>("OptionText")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
-                    b.Property<int?>("PollId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Votes")
+                    b.Property<int>("PollId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -97,12 +95,64 @@ namespace Infrastructure.Persistence.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("Domain.Entities.Vote", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("OptionId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PollId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserIp")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("VotedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OptionId");
+
+                    b.HasIndex("PollId");
+
+                    b.ToTable("Votes");
+                });
+
             modelBuilder.Entity("Domain.Entities.PollOption", b =>
                 {
-                    b.HasOne("Domain.Entities.Poll", null)
+                    b.HasOne("Domain.Entities.Poll", "Poll")
                         .WithMany("Options")
                         .HasForeignKey("PollId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Poll");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Vote", b =>
+                {
+                    b.HasOne("Domain.Entities.PollOption", "Option")
+                        .WithMany()
+                        .HasForeignKey("OptionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Entities.Poll", "Poll")
+                        .WithMany()
+                        .HasForeignKey("PollId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Option");
+
+                    b.Navigation("Poll");
                 });
 
             modelBuilder.Entity("Domain.Entities.Poll", b =>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZcL+WWTFzvWZYlsTJq7BneESZjvUI3vTMpYINNPv3mDNHazj00q1ADEovVAsroSJr3tcV0BxW97Y3NUlAveLhg==",
+  "dgSpecHash": "GWGvkBj8vQM=",
   "success": true,
-  "projectFilePath": "E:\\Net\\PollingApp\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\Net\\PollingApp\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

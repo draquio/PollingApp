@@ -1,12 +1,88 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Net\\PollingApp\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Net\\PollingApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FE56589-B303-41FD-A80B-99D69206FF69}|WebApi\\WebApi.csproj|d:\\net\\pollingapp\\webapi\\controllers\\votecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FE56589-B303-41FD-A80B-99D69206FF69}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\votecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FE56589-B303-41FD-A80B-99D69206FF69}|WebApi\\WebApi.csproj|d:\\net\\pollingapp\\webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FE56589-B303-41FD-A80B-99D69206FF69}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2033AA36-6559-49DD-82FF-925E1D842994}|Application\\Application.csproj|d:\\net\\pollingapp\\application\\commands\\votes\\addvote\\addvotecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2033AA36-6559-49DD-82FF-925E1D842994}|Application\\Application.csproj|solutionrelative:application\\commands\\votes\\addvote\\addvotecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2033AA36-6559-49DD-82FF-925E1D842994}|Application\\Application.csproj|d:\\net\\pollingapp\\application\\commands\\votes\\addvote\\addvotecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2033AA36-6559-49DD-82FF-925E1D842994}|Application\\Application.csproj|solutionrelative:application\\commands\\votes\\addvote\\addvotecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddVoteCommandHandler.cs",
+              "DocumentMoniker": "D:\\Net\\PollingApp\\Application\\Commands\\Votes\\AddVote\\AddVoteCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Commands\\Votes\\AddVote\\AddVoteCommandHandler.cs",
+              "ToolTip": "D:\\Net\\PollingApp\\Application\\Commands\\Votes\\AddVote\\AddVoteCommandHandler.cs",
+              "RelativeToolTip": "Application\\Commands\\Votes\\AddVote\\AddVoteCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T22:24:45.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddVoteCommand.cs",
+              "DocumentMoniker": "D:\\Net\\PollingApp\\Application\\Commands\\Votes\\AddVote\\AddVoteCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Commands\\Votes\\AddVote\\AddVoteCommand.cs",
+              "ToolTip": "D:\\Net\\PollingApp\\Application\\Commands\\Votes\\AddVote\\AddVoteCommand.cs",
+              "RelativeToolTip": "Application\\Commands\\Votes\\AddVote\\AddVoteCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T22:24:38.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Net\\PollingApp\\WebApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Net\\PollingApp\\WebApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwFUAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T22:17:17.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VoteController.cs",
+              "DocumentMoniker": "D:\\Net\\PollingApp\\WebApi\\Controllers\\VoteController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\VoteController.cs",
+              "ToolTip": "D:\\Net\\PollingApp\\WebApi\\Controllers\\VoteController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\VoteController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T22:17:11.468Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -8,13 +8,5 @@ using System.Threading.Tasks;
 
 namespace Application.Commands.Polls.Create
 {
-    public class CreatePollCommand : IRequest<PollReadDTO>
-    {
-        public PollCreateDTO Poll;
-
-        public CreatePollCommand(PollCreateDTO poll)
-        {
-            Poll = poll;
-        }
-    }
+    public record CreatePollCommand(PollCreateDTO Poll) : IRequest<PollReadDTO>;
 }

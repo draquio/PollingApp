@@ -1,10 +1,6 @@
 ﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Infrastructure.Persistence
 {
@@ -17,7 +13,7 @@ namespace Infrastructure.Persistence
         public DbSet<User> Users { get; set; }
         public DbSet<Poll> Polls { get; set; }
         public DbSet<PollOption> PollOptions { get; set; }
-        public DbSet<VoteTracking> VoteTrackings { get; set; }
+        public DbSet<Vote> Votes { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -36,12 +32,33 @@ namespace Infrastructure.Persistence
 
             modelBuilder.Entity<Poll>()
                 .HasMany(p => p.Options)
-                .WithOne().OnDelete(DeleteBehavior.Cascade);
+                .WithOne(o => o.Poll)
+                .HasForeignKey(o => o.PollId)
+                .OnDelete(DeleteBehavior.Cascade);
 
-            modelBuilder.Entity<VoteTracking>()
+            modelBuilder.Entity<PollOption>()
+                .HasKey(po => po.Id);
+
+            modelBuilder.Entity<PollOption>()
+                .Property(po => po.OptionText)
+                .IsRequired()
+                .HasMaxLength(200);
+
+            modelBuilder.Entity<Vote>()
+                .HasKey(v => v.Id);
+
+
+            modelBuilder.Entity<Vote>()
                 .HasOne(v => v.Poll)
                 .WithMany()
-                .HasForeignKey(v => v.PollId);
+                .HasForeignKey(v => v.PollId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Vote>()
+                .HasOne(v => v.Option)
+                .WithMany()
+                .HasForeignKey(v => v.OptionId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             base.OnModelCreating(modelBuilder);
 
